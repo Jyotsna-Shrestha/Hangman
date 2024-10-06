@@ -1,4 +1,5 @@
 import random
+import os
 from hangman_art import stages,logo
 from hangman_words import word_list
 
@@ -14,6 +15,7 @@ while "_" in display and lives !=0:
     print(stages[lives])
     guess = input("Guess a letter: ").lower()
     position = 0
+    os.system('cls' if os.name == 'nt' else 'clear')
     if guess not in guessed_letters:
         if guess in chosen_word:
             for letter in chosen_word:
