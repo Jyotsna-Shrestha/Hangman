@@ -29,6 +29,6 @@ while "_" in display and lives !=0:
         print(f"You already have guessed the letter {guess}. Pick another letter.")
     guessed_letters.append(guess)
 if lives == 0:
-    print ("Game over. You lose.")
+    print (f"Game over. You lose. The word was '{chosen_word}'.")
 else:
-    print ("Congratulations. You won!")
+    print (f"Congratulations. The word '{chosen_word}' is correct. You won!")
